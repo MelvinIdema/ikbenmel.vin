@@ -101,6 +101,10 @@ aside {
   grid-column: 6;
 }
 
+aside .card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 #aside {
   --hue: 200;
 }
@@ -129,4 +133,18 @@ aside {
 footer {
   grid-column: 1/7;
   grid-row: 4;
+}
+
+.featured {
+  --hue: 200;
+}
+
+.featured .content {
+  padding: 0;
+}
+
+.featured img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
